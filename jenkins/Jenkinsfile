@@ -11,8 +11,8 @@ pipeline {
                 sh 'mvn -B -DskipTests clean package'
             }
         }
-        stage ('Sonar'){
-            step{
+        stage('Sonar'){
+            steps{
                 sh 'mvn sonar:sonar -Dsonar.host.url=http://localhost:9000 -Dsonar.login=0877c359705dacdb300b033b4217eed443c85576'
             }
         }    
