@@ -13,7 +13,7 @@ pipeline {
         }
         stage('Sonar'){
             steps{
-                sh 'mvn sonar:sonar -Dsonar.host.url=http://172.28.21.77:9000 -Dsonar.login=0877c359705dacdb300b033b4217eed443c85576'
+                sh 'mvn sonar:sonar -Dsonar.host.url=http://172.28.21.77:9000 -Dsonar.login=0tokken sonar qube'
             }
         }    
         stage('Test') {
